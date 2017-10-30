@@ -9,7 +9,7 @@
     <version>7</version>
   </parent>
 
-  <groupId>com.squareup.okhttp3</groupId>
+  <groupId>premise.forks.com.squareup.okhttp3</groupId>
   <artifactId>parent</artifactId>
   <version>3.9.1</version>
   <packaging>pom</packaging>
@@ -60,9 +60,9 @@
   </properties>
 
   <scm>
-    <url>https://github.com/square/okhttp/</url>
-    <connection>scm:git:https://github.com/square/okhttp.git</connection>
-    <developerConnection>scm:git:git@github.com:square/okhttp.git</developerConnection>
+    <url>https://github.com/premisedata/okhttp/</url>
+    <connection>scm:git:https://github.com/premisedata/okhttp.git</connection>
+    <developerConnection>scm:git:git@github.com:premisedata/okhttp.git</developerConnection>
     <tag>parent-3.9.0</tag>
   </scm>
 
@@ -77,6 +77,17 @@
       <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
     </license>
   </licenses>
+
+  <distributionManagement>
+    <repository>
+      <id>internal-releases</id>
+      <url>https://premise.artifactoryonline.com/premise/private-local</url>
+    </repository>
+    <snapshotRepository>
+      <id>internal-snapshots</id>
+      <url>https://premise.artifactoryonline.com/premise/private-snapshots-local</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <dependencyManagement>
     <dependencies>
